@@ -4,24 +4,50 @@
     <meta charset="UTF-8">
     <title>Note_API</title>
 </head>
-<body>
- <h3>Welcome to the app</h3>
-
- {% for message in messages %}
- <div class="alert alert-{{message.tags }} alert-dismissible fade show" role="alert"><strong>message:</strong> {{ message }<button type="button" class="close" data-dismiss="alert" aria-label="close"><span aria-hidden="true">&times</span></button></div>
- {% endfor %}
-
- {% if user.is_authenticated %}
-  <h3>Hello {{ username }}</h3>
-  <h4>Your are successfully logged in</h4>
-  <button type="submit"> <a href="/signout">signout</a></button>
+ <body>
+   <button name="simple_button" type="button">
+          Click me ;)
+   </button>
 
 
- {% else %}
-  <button type="submit"> <a href="/signin"> signin</a></button>
-  <button type="submit"> <a href="/signup"> signup</a></button>
-<!--  <button type="submit"> <a href="/signout"> signout</a></button>-->
- {% endif %}
+    <button name="submit_button" type="submit" value="Submit">
+        Submit  ;
+   </button>
 
-</body>
+     <button name="Update_button" type="Update">
+        Update  ;
+   </button>
+
+
+    <button name="Delete_button" type="Delete">
+        Delete ;
+   </button>
+
+  <button onclick="alert('you clicked on button')" >
+        Alert!
+   </button>
+
+
+<br>
+   <a href="https://github.com/">
+  <button>
+   Github
+  </button>
+ </a>
+   <br>
+
+ <button style="background-colour:#97f7cc;
+                color: #0db46a;
+                 font-size: 18px;
+                 font-family: mongospace">
+  css style
+
+ </button>
+
+
+
+
+
+
+ </body>
 </html>
